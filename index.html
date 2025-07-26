@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hồ sơ cá nhân - Võ Duy Phú</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="profile-header">
+    <img src="avatar.jpg" alt="Ảnh đại diện" class="avatar">
+    <div class="profile-info">
+      <h1>Võ Duy Phú</h1>
+      <p>Tuổi: 21</p>
+      <p>Ngày sinh: 24/04/2005</p>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>🎨 Vẽ Tranh</h2>
+    <div class="tools">
+      <label>Màu: <input type="color" id="colorPicker" value="#000000" /></label>
+      <label>Độ dày: <input type="range" id="brushSize" min="1" max="20" value="2" /></label>
+      <button onclick="clearCanvas()">🧽 Xóa</button>
+      <button onclick="downloadImage()">📥 Tải về</button>
+    </div>
+    <canvas id="drawCanvas"></canvas>
+  </div>
+
+  <div class="section">
+    <h2>♟️ Cờ Caro</h2>
+    <div id="caroBoard"></div>
+    <p id="gameStatus">Lượt của người chơi: X</p>
+    <button onclick="resetCaro()">Chơi lại</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
